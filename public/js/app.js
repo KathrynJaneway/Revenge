@@ -47565,7 +47565,9 @@ var render = function() {
               [_vm._v("+")]
             ),
             _vm._v(" "),
-            _c("label", [_vm._v(_vm._s(_vm.count))]),
+            _c("label", [
+              _vm._v(_vm._s(_vm.count < 0 ? (_vm.count = 0) : _vm.count))
+            ]),
             _vm._v(" "),
             _c(
               "button",

@@ -5,7 +5,7 @@
                 <div class="card card-default">
                     <div class="card-body">
                         <button v-on:click="count++">+</button>
-                        <label>{{ count }}</label>
+                        <label>{{ count < 0 ? count=0 : count }}</label>
                         <button v-on:click="count--">-</button>
                     </div>
                 </div>
