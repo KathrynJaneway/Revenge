@@ -4,9 +4,9 @@
             <div class="col-md-8">
                 <div class="card card-default">
                     <div class="card-body">
-                        <button>+</button>
-                        <label>wow</label>
-                        <button>-</button>
+                        <button v-on:click="count++">+</button>
+                        <label>{{ count }}</label>
+                        <button v-on:click="count--">-</button>
                     </div>
                 </div>
             </div>
@@ -16,8 +16,10 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data : function () {
+            return {
+                count: 0
+            }
         }
     }
 </script>
