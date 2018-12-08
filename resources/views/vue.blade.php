@@ -2,5 +2,4 @@
 
 @section('content')
     <example-component></example-component>
-    <counter></counter>
 @endsection
