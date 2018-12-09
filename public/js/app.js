@@ -47532,6 +47532,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -47554,9 +47563,12 @@ var render = function() {
       _c("div", { staticClass: "col-md-8" }, [
         _c("div", { staticClass: "card card-default" }, [
           _c("div", { staticClass: "card-body" }, [
+            _vm._m(0),
+            _vm._v(" "),
             _c(
               "button",
               {
+                staticClass: "button-left",
                 on: {
                   click: function($event) {
                     _vm.count++
@@ -47573,6 +47585,7 @@ var render = function() {
             _c(
               "button",
               {
+                staticClass: "button-right",
                 on: {
                   click: function($event) {
                     _vm.count--
@@ -47587,7 +47600,22 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box" }, [
+      _c("div", { staticClass: "wave -one" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "wave -two" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "wave -three" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "title" }, [_vm._v("Saphira")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
