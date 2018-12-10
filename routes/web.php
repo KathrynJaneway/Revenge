@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('/', 'PageController@index');
+Route::get('/contact', 'PageController@contact');
+Route::get('/projects', 'PageController@contact');
+Route::get('/impressum', 'PageController@contact');
+Route::get('/about', 'PageController@contact');
+
+
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +26,9 @@ Route::get('/', function () {
 Route::get('/vue', function () {
 	return view('vue');
 });
+
+Route::get('/blub', function () {
+    return view('blub');
+});
+
+*/
