@@ -1,5 +1,5 @@
 @extends('layouts.vue')
 
 @section('content')
-    <counter></counter>
+    <example-component></example-component>
 @endsection
