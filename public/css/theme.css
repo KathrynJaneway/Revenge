@@ -1,45 +1,14 @@
 /*
-#wave {
-  position: absolute;
-  height: 70px;
-  width: 600px;
-  background: #e0efe3;
-}
-
-#wave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 345px;
-  height: 80px;
-  background-color: #6c757d;
-  right: -5px;
-  top: 40px;
-}
-#wave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 300px;
-  height: 70px;
-  background-color: #e0efe3;
-  left: 0;
-  top: 27px;
-}
-*/
+   General
+------------------------------------------------------------------- */
 
 html,
 body {
   height: 100%;
 }
 
-html {
-  background: #eee;
-}
-
 body {
+  background: #6c757d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +20,26 @@ body {
           align-items: center;
 }
 
-.box {
-  width: 1000px;
+/*
+   Links
+------------------------------------------------------------------- */
+
+a {
+  color: #0af;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbfcee;
+}
+
+/*
+   Layout
+------------------------------------------------------------------- */
+
+/* Header */
+
+.header {
   height: 300px;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
@@ -70,7 +57,7 @@ body {
   top: 3%;
   left: 15%;
   background: #0af;
-  width: 1200px;
+  width: 110%;
   height: 1200px;
   margin-left: -250px;
   margin-top: -950px;
@@ -93,7 +80,7 @@ body {
   background: yellow;
 }
 
-.box:after {
+.header:after {
   content: '';
   display: block;
   left: 0;
@@ -150,9 +137,9 @@ body {
   }
 }
 
-body {
-  background-color: #6c757d;
-}
+/*
+   Forms
+------------------------------------------------------------------- */
 
 .button-left {
   background-color: #9561e2;
@@ -164,5 +151,32 @@ body {
   background-color: #9561e2;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+.btn-secondary.raised.start {
+  -webkit-box-shadow: 2px 2px 2px 2px #0af;
+          box-shadow: 2px 2px 2px 2px #0af;
+}
+
+.btn-secondary.raised.inner {
+  -webkit-box-shadow: 2px 2px 2px 2px #0af;
+          box-shadow: 2px 2px 2px 2px #0af;
+  margin-left: 2px;
+}
+
+.btn-secondary.raised.end {
+  -webkit-box-shadow: 2px 2px 2px 2px #0af;
+          box-shadow: 2px 2px 2px 2px #0af;
+  margin-left: 2px;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background: #0af;
+}
+
+.btn-secondary:hover,
+.btn-secondary.hover {
+  color: #fbfcee;
 }
 

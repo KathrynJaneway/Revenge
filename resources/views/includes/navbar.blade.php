@@ -1,11 +1,8 @@
-<div class="navbar">
-    <div class="navbar-inner">
-        <a id="logo" href="/">Single Malt</a>
-        <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </div>
-</div>
+
+<nav class="btn-group" data-toggle="buttons">
+    <a class="btn btn-secondary raised start btn-lg active" role="button" aria-pressed="true" href="#">Home</a>
+    <a class="btn btn-secondary raised inner btn-lg active" role="button" aria-pressed="true" href="<?php echo URL::to('/projects')?>">projects</a>
+    <a class="btn btn-secondary raised inner btn-lg active" role="button" aria-pressed="true" href="<?php echo URL::to('/about')?>">about</a>
+    <a class="btn btn-secondary raised inner btn-lg active" role="button" aria-pressed="true" href="<?php echo URL::to('/contact')?>">contact</a>
+    <a class="btn btn-secondary raised end btn-lg active" role="button" aria-pressed="true" href="<?php echo URL::to('/impressum')?>">impressum</a>
+</nav>
