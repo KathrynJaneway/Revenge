@@ -13,7 +13,7 @@
 
 Route::get('/', 'PageController@index');
 Route::get('/contact', 'PageController@contact');
-Route::get('/projects', 'PageController@contact');
+/*Route::get('/vue', 'PageController@contact');*/
 Route::get('/impressum', 'PageController@contact');
 Route::get('/about', 'PageController@contact');
 
@@ -22,13 +22,27 @@ Route::get('/about', 'PageController@contact');
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 Route::get('/vue', function () {
 	return view('vue');
 });
 
+Route::get('/demo', function () {
+
+    return view('demo');
+
+});
+
+/*
 Route::get('/blub', function () {
     return view('blub');
 });
 
 */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

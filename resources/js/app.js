@@ -18,7 +18,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('counter',require('./components/Counter.vue'));
+Vue.component('counter', require('./components/Counter.vue'));
+Vue.component('gameBoard', require('./components/game-board.vue'));
 
 //TODO: Write a function to register the Vue's automaticaly!
 
