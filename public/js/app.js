@@ -47564,71 +47564,40 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-xs-6 col-md-4" }, [
-      _c("div", { staticClass: "btn-group" }, [
-        _c(
-          "button",
-          {
-            staticClass: "button-left",
-            on: {
-              click: function($event) {
-                _vm.count++
-              }
+    _c("div", { staticClass: "btn-group" }, [
+      _c(
+        "button",
+        {
+          staticClass: "button-left",
+          on: {
+            click: function($event) {
+              _vm.count++
             }
-          },
-          [_vm._v("+")]
-        ),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v(_vm._s(_vm.count < 3 ? (_vm.count = 3) : _vm.count))
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "button-right",
-            on: {
-              click: function($event) {
-                _vm.count--
-              }
+          }
+        },
+        [_vm._v("+")]
+      ),
+      _vm._v(" "),
+      _c("label", [
+        _vm._v(_vm._s(_vm.count < 3 ? (_vm.count = 3) : _vm.count))
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "button-right",
+          on: {
+            click: function($event) {
+              _vm.count--
             }
-          },
-          [_vm._v("-")]
-        )
-      ])
+          }
+        },
+        [_vm._v("-")]
+      )
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-12 col-sm-6 col-md-8" }, [
-      _c("div", { staticClass: "table" }, [
-        _c("table", { attrs: { border: "1" } }, [
-          _c("tr", [
-            _c("th", [_vm._v("blub")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("hallo")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("blub")])
-          ]),
-          _vm._v(" "),
-          _c("tr", [
-            _c("th", [_vm._v("mip")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("mop")]),
-            _vm._v(" "),
-            _c("td", [_vm._v("knop")])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

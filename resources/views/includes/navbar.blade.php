@@ -40,7 +40,7 @@
         </a>
         <div class="badge teal">
             <div class="circle"> <i class="fa fa-bicycle"></i></div>
-            <div class="ribbon">Roamer</div>
+            <div class="ribbon">Learn</div>
         </div>
         <div class="badge blue">
             <div class="circle"> <i class="fa fa-users"></i></div>
