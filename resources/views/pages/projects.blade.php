@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="css/theme.css">
-    <title></title>
-</head>
-<body>
-<div id="app">
-    @yield("content")
-</div>
-<script src="/js/app.js"></script>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-6">
+                <game-board></game-board>
+            </div>
+            <div class="col-4">
+                <counter></counter>
+            </div>
+        </div>
+    </div>
+@endsection

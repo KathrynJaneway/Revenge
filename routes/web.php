@@ -13,20 +13,19 @@
 
 Route::get('/', 'PageController@index');
 Route::get('/contact', 'PageController@contact');
-/*Route::get('/vue', 'PageController@contact');*/
 Route::get('/impressum', 'PageController@contact');
 Route::get('/about', 'PageController@contact');
+Route::get('/projects', 'PageController@contact');
 
 
-/*
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('welcome');
 });
-*/
-Route::get('/vue', function () {
-	return view('vue');
+/*
+Route::get('/projects', function () {
+	return view('projects');
 });
-
+*/
 Route::get('/demo', function () {
 
     return view('demo');

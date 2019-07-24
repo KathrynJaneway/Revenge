@@ -3,12 +3,12 @@
 class PageController extends Controller {
     public function index()
     {
-        return view('home2');
+        return view('home');
     }
 
     public function projects()
     {
-        return view('vue');
+        return view('pages/projects');
     }
 
     public function contact()

@@ -14,7 +14,7 @@
                 <div class="ribbon">Home</div>
             </div>
         </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/vue')?>">
+        <a role="button" aria-pressed="true" href="<?php echo URL::to('/projects')?>">
             <div class="badge orange">
                 <div class="circle"> <i class="fa fa-wheelchair-alt"></i></div>
                 <div class="ribbon">Projects</div>
