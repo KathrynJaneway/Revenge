@@ -6,9 +6,24 @@ class PageController extends Controller {
         return view('home');
     }
 
-    public function projects()
+    public function projectlist()
     {
-        return view('pages/projects');
+        return view('pages/projectlist');
+    }
+
+    public function project_movie()
+    {
+        return view('pages/projects/movie');
+    }
+
+    public function project_movieAPI()
+    {
+        return view('pages/projects/api/movieAPI/titleSearchRequest');
+    }
+
+    public function project_havenstones()
+    {
+        return view('pages/projects/havenstones');
     }
 
     public function contact()

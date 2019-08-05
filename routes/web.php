@@ -11,11 +11,17 @@
 |
 */
 
-Route::get('/', 'PageController@index');
+
 Route::get('/contact', 'PageController@contact');
-Route::get('/impressum', 'PageController@contact');
-Route::get('/about', 'PageController@contact');
-Route::get('/projects', 'PageController@contact');
+Route::get('/impressum', 'PageController@impressum');
+Route::get('/about', 'PageController@about');
+Route::get('/projectlist', 'PageController@projectlist');
+Route::get('/project_movie', 'PageController@project_movie');
+Route::post('/project_movieAPI', 'PageController@project_movieAPI');
+Route::get('/project_havenstones', 'PageController@project_havenstones');
+Route::get('/', 'PageController@index');
+
+
 
 
 Route::get('/login', function () {

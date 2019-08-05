@@ -14,9 +14,9 @@
                 <div class="ribbon">Home</div>
             </div>
         </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/projects')?>">
+        <a role="button" aria-pressed="true" href="<?php echo URL::to('/projectlist')?>">
             <div class="badge orange">
-                <div class="circle"> <i class="fa fa-wheelchair-alt"></i></div>
+                <div class="circle"> <i class="fa fa-rocket"></i></div>
                 <div class="ribbon">Projects</div>
             </div>
         </a>
@@ -47,7 +47,7 @@
             <div class="ribbon">Pusher</div>
         </div>
         <div class="badge blue-dark">
-            <div class="circle"> <i class="fa fa-rocket"></i></div>
+            <div class="circle"> <i class="fa fa-hand-spock-o"></i></div>
             <div class="ribbon">Escape</div>
         </div>
         <div class="badge green">
