@@ -42,7 +42,7 @@ class MovieController extends Controller {
         $ch = curl_init();
 
         //Set the URL with search title and secret apikey
-        curl_setopt($ch, CURLOPT_URL, "http://www.omdbapi.com/?t=" . $movie_title . "&apikey=922e836");
+        curl_setopt($ch, CURLOPT_URL, "http://www.omdbapi.com/?t=" . $movie_title . "&apikey=placeholder");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         //Execut the request
