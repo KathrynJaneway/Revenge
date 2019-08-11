@@ -19,6 +19,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '/project_movieAPI'
+        '/project_movieAPI',
+        'search'
     ];
 }

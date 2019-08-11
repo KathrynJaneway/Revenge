@@ -20,7 +20,7 @@ Route::get('/project_movie', 'PageController@project_movie');
 Route::post('/project_movieAPI', 'PageController@project_movieAPI');
 Route::get('/project_havenstones', 'PageController@project_havenstones');
 Route::get('/', 'PageController@index');
-
+Route::post('search','MovieController@search');
 
 
 

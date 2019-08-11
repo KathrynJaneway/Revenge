@@ -16,10 +16,10 @@ class PageController extends Controller {
         return view('pages/projects/movie');
     }
 
-    public function project_movieAPI()
+   /** public function project_movieAPI()
     {
         return view('pages/projects/api/movieAPI/titleSearchRequest');
-    }
+    }**/
 
     public function project_havenstones()
     {
