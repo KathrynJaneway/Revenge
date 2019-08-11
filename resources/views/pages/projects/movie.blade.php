@@ -65,6 +65,14 @@
             </div>
             <div class="row padding">
                 <div class="col-2 col-md-2 col-xl-2 textgrey" >
+                    Website:
+                </div>
+                <div class="col-10 col-md-10 col-xl-10" id="profileWebsite">
+                    No data available!
+                </div>
+            </div>
+            <div class="row padding">
+                <div class="col-2 col-md-2 col-xl-2 textgrey" >
                     Director:
                 </div>
                 <div class="col-4 col-md-4 col-xl-4" id="profileDirector">
@@ -99,10 +107,10 @@
                     Buena Vista Pictures
                 </div>
                 <div class="col-2 col-md-2 col-xl-2 textgrey" >
-                    Website:
+                    IMDB-ID:
                 </div>
-                <div class="col-4 col-md-4 col-xl-4" id="profileWebsite">
-                    No data available!
+                <div class="col-4 col-md-4 col-xl-4" id="profileimdbID">
+                    tt0084827
                 </div>
             </div>
         </div>
@@ -129,12 +137,14 @@
                  document.getElementById("profilePlot").innerText = movie.Plot;
                  document.getElementById("profileActors").innerText = movie.Actors;
                  document.getElementById("profileDirector").innerText = movie.Director;
-                 document.getElementById("profileWriter").innerText = "Writer: " + movie.Writer;
-                 document.getElementById("profileGenre").innerText = "Genre: " + movie.Genre;
-                 document.getElementById("profileAwards").innerText = "Awards: " + movie.Awards;
-                 document.getElementById("profileProduction").innerText = "Production: " + movie.Production;
-                 document.getElementById("profileWebsite").innerText = "Website: " + movie.Website;
+                 document.getElementById("profileWriter").innerText = movie.Writer;
+                 document.getElementById("profileGenre").innerText = movie.Genre;
+                 document.getElementById("profileAwards").innerText = movie.Awards;
+                 document.getElementById("profileProduction").innerText = movie.Production;
+                 document.getElementById("profileWebsite").innerText = movie.Website;
+                 document.getElementById("profileimdbID").innerText = movie.imdbID;
                  document.getElementById("profilePoster").src = movie.Poster;
+                 //TODO wenn kein film gefunden wurde error nachricht
              }
          });
      }
