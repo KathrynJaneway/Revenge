@@ -145,6 +145,7 @@
                  document.getElementById("profileimdbID").innerText = movie.imdbID;
                  document.getElementById("profilePoster").src = movie.Poster;
                  //TODO wenn kein film gefunden wurde error nachricht
+                 //TODO poster in die mitte setzen
              }
          });
      }
