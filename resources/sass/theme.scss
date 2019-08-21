@@ -88,6 +88,56 @@ a:hover {
   transform: translate3d(0, 0, 0);
 }
 
+/* Header */
+.login {
+  width: 100%;
+  //border-radius: 5px;
+  //box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.login:after {
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  //background: linear-gradient(to bottom, rgba(149,98,226,0) 0%,rgba(182,157,224,0) 28%,rgba(249,249,237,1) 55%,rgba(109,114,119,1) 85%,rgba(106,114,122,1) 100%);
+  //background: linear-gradient(to bottom, rgba(#9561e2, 1), rgba(#B69DE0, 0.5) 30%, rgba(#def, 0) 80%, rgba(#6c757d, 1) 100%);
+  //background: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+  //background: linear-gradient(to bottom, #9562e2 0%,#8d79c4 30%,#9088ad 70%,#6a727a 100%);
+  //background: linear-gradient(to bottom, #9562e2 0%,#b69ee0 30%,#9088ad 70%,#6a727a 100%);
+  //background: linear-gradient(to bottom, rgba(149,98,226,1) 0%,rgba(141,121,196,0.7) 30%,rgba(144,136,173,0.7) 70%,rgba(106,114,122,1) 100%);
+  //background: linear-gradient(to bottom, rgba(#9561e2, 1), rgba(#B69DE0, 0.5) 30%, rgba(#def, 0) 80%, rgba(#6c757d, 1) 100%);
+  background: linear-gradient(to bottom, rgba(149,98,226,1) 0%,rgba(144,128,191,0.5) 30%, rgba(175,162,206,0) 50%, rgba(140,138,164,0.5) 70%,rgba(106,114,122,1) 100%);
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.logintitle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
 .title {
   position: absolute;
   left: 0;
@@ -150,12 +200,14 @@ a:hover {
 
 .button-left {
   background-color: #9561e2;
-  border-top-left-radius: 50px; border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .button-right {
   background-color: #9561e2;
-  border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .btn-secondary.raised.start {
