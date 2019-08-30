@@ -2,6 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/theme.css": "/css/theme.css",
+    "/css/saphiraTheme.css": "/css/saphiraTheme.css",
     "/css/login.css": "/css/login.css",
     "/js/bootstrap.js": "/js/bootstrap.js"
 }

@@ -1,0 +1,165 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  //background-color: #37bcbb;
+  color: black;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.padding {
+  padding-top: 20px;
+}
+
+.paddingb {
+  padding-bottom: 20px;
+}
+
+.paddingl {
+  padding-left: 25px;
+}
+
+.marginr {
+  margin-right: 30px;
+}
+
+.applink {
+  color: #9561e2 !important;
+}
+
+.shadowdiv {
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.block {
+  display: block;
+}
+
+.buttonleftround {
+  border-radius:40px 0px 0px 40px;
+}
+
+.buttonrightround {
+  border-radius:0px 40px 40px 0px;
+  background-color: #c6e0f5;
+}
+
+.movieprofile {
+  background-color: #c6e0f5;
+  border-radius: 40px 0px;
+}
+
+.movieposter {
+  background-color: white;
+  border-radius: 40px 0px;
+}
+
+.textgrey {
+  color: rgba(0, 0, 0, 0.27);
+}
+
+.verticalline {
+  border-right-style:dotted;
+  color: #c6e0f5;
+  padding-left: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/**
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  //background-color: #37bcbb;
+  background-size: cover;
+  backgrount-attachment: fixed;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: #cccccc;
+  border: 5px solid #fff;
+
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 50%;
+}
+
+.wave:before,
+.wave:after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: black;
+}
+
+*/
+
+.wave {
+  opacity: .9;
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  bottom: 0;
+  left: 0;
+  background: url("/png/wave.png") #575DA9;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0;
+  }
+
+  100%
+  {
+    background-position: 1360px;
+  }
+}
+
+.wave.-two {
+  background: url("/png/wave.png") #02558B;
+  opacity: .9;
+  animation: animate 20s linear infinite;
+}
+
+.wave.-three {
+  opacity: .5;
+  background: url("/png/wave.png") #E42D9F;
+  animation: animate 12s linear infinite;
+}
+
+.card {
+  //height: 300px;
+}
+
+//https://codepen.io/pen/?&editable=true
+//https://www.youtube.com/watch?v=dQw9v7bWbPE
+//https://www.youtube.com/watch?v=l5PkvXb3LeU

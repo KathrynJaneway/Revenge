@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Schema;
+use Schema;
 
 class AppServiceProvider extends ServiceProvider
 {

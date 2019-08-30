@@ -10,13 +10,6 @@ body {
    Links
 ------------------------------------------------------------------- */
 
-a {
-  color: #0af;
-  text-decoration: none;
-}
-a:hover {
-  color: lighten(#f0f4c3, 10%) /*#f4f6e8;*/
-}
 
 /*
    Layout
@@ -37,15 +30,15 @@ a:hover {
   animation: drift 20000ms infinite linear;
 }
 
-.wave.-three {
-  background: #02558B;
-  animation: drift 30000ms infinite linear;
-}
-
 .wave.-two {
   animation: drift 50000ms infinite linear;
   opacity: .5;
   background: #E42D9F;
+}
+
+.wave.-three {
+  background: #02558B;
+  animation: drift 30000ms infinite linear;
 }
 
 /* Header */
@@ -94,6 +87,8 @@ input {
 
 button {
   margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 50px;
   border-style: hidden;
   background-color: transparentize(#E42D9F, 0.5);
