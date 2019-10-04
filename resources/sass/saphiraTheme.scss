@@ -121,11 +121,11 @@ section {
 
 */
 
-.wave {
+.wav {
   opacity: .9;
   position: absolute;
   width: 100%;
-  height: 143px;
+  height: 340px;
   bottom: 0;
   left: 0;
   background: url("/png/wave.png") #575DA9;
@@ -144,20 +144,20 @@ section {
   }
 }
 
-.wave.-two {
+.wav.-two {
   background: url("/png/wave.png") #02558B;
   opacity: .9;
   animation: animate 20s linear infinite;
 }
 
-.wave.-three {
+.wav.-three {
   opacity: .5;
   background: url("/png/wave.png") #E42D9F;
   animation: animate 12s linear infinite;
 }
 
 .card {
-  //height: 300px;
+  height: 300px;
 }
 
 //https://codepen.io/pen/?&editable=true

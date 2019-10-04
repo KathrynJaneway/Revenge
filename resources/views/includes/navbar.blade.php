@@ -1,71 +1,47 @@
-<nav class="btn-group" data-toggle="links">
-    <!--
-    <a class="btn btn-secondary raised start btn-lg active" role="link" aria-pressed="true" href="#">Home</a>
-    <a class="btn btn-secondary raised inner btn-lg active" role="button" aria-pressed="true" href="<?php echo URL::to('/vue')?>">projects</a>
-    <a class="btn btn-secondary raised inner btn-lg active" role="link" aria-pressed="true" href="<?php echo URL::to('/about')?>">about</a>
-    <a class="btn btn-secondary raised inner btn-lg active" role="link" aria-pressed="true" href="<?php echo URL::to('/contact')?>">contact</a>
-    <a class="btn btn-secondary raised end btn-lg active" role="link" aria-pressed="true" href="<?php echo URL::to('/impressum')?>">impressum</a>
-    -->
+<div class="nav row col-12">
 
-    <div class="main-wrapper">
-        <a role="button" aria-pressed="true" href="#">
-            <div class="badge yellow">
-                <div class="circle"> <i class="fa fa-bolt"></i></div>
-                <div class="ribbon">Home</div>
-            </div>
+    <div class="col-8 col-xl-8 index-befor">
+        <a class="" href="{{ url('/') }}">
+            {{ config('app.name', 'Saphira') }} <i class="fa fa-diamond"></i>
         </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/projectlist')?>">
-            <div class="badge orange">
-                <div class="circle"> <i class="fa fa-rocket"></i></div>
-                <div class="ribbon">Projects</div>
-            </div>
-        </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/about')?>">
-            <div class="badge pink">
-                <div class="circle"> <i class="fa fa-pied-piper"></i></div>
-                <div class="ribbon">About</div>
-            </div>
-        </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/contact')?>">
-            <div class="badge red">
-                <div class="circle"> <i class="fa fa-shield"></i></div>
-                <div class="ribbon">Contact</div>
-            </div>
-        </a>
-        <a role="button" aria-pressed="true" href="<?php echo URL::to('/impressum')?>">
-            <div class="badge purple">
-                <div class="circle"> <i class="fa fa-anchor"></i></div>
-                <div class="ribbon">Impressum</div>
-            </div>
-        </a>
-        <div class="badge teal">
-            <div class="circle"> <i class="fa fa-bicycle"></i></div>
-            <div class="ribbon">Learn</div>
-        </div>
-        <div class="badge blue">
-            <div class="circle"> <i class="fa fa-users"></i></div>
-            <div class="ribbon">Pusher</div>
-        </div>
-        <div class="badge blue-dark">
-            <div class="circle"> <i class="fa fa-hand-spock-o"></i></div>
-            <div class="ribbon">Escape</div>
-        </div>
-        <div class="badge green">
-            <div class="circle"> <i class="fa fa-tree"></i></div>
-            <div class="ribbon">Jungler</div>
-        </div>
-        <div class="badge green-dark">
-            <div class="circle"> <i class="fa fa-user fa-street-view"></i></div>
-            <div class="ribbon">Offlaner</div>
-        </div>
-        <div class="badge silver">
-            <div class="circle"> <span class="font">AFK</span></div>
-            <div class="ribbon">Carry</div>
-        </div>
-        <div class="badge gold">
-            <div class="circle"> <i class="fa fa-magic"></i></div>
-            <div class="ribbon">Support</div>
+    </div>
+
+    <div class="col-4 col-xl-4 pull-right text-right index-befor">
+
+        <a href="#" id="nav-header"> {{ Auth::user()->name }}</a>
+
+        <div class="display-non" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Profil</a>
+                </li>
+                <li>
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                    </form>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-   </nav>
+
+</div>
+
 
