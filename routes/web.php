@@ -17,6 +17,7 @@ Route::get('/impressum', 'PageController@impressum');
 Route::get('/about', 'PageController@about');
 Route::get('/projectlist', 'PageController@projectlist');
 Route::get('/project_movie', 'PageController@project_movie');
+Route::get('/project_my_own_docs', 'PageController@project_my_own_docs');
 Route::post('/project_movieAPI', 'PageController@project_movieAPI');
 Route::get('/project_havenstones', 'PageController@project_havenstones');
 Route::get('/', 'PageController@index');

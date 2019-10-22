@@ -8,10 +8,14 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Bootstrap
+@import 'base';
+
+/**
 body {
   //background-color: #37bcbb;
   color: black;
-  overflow: hidden;
+  //overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
 
@@ -52,7 +56,7 @@ body {
   border-radius:0px 40px 40px 0px;
   background-color: #c6e0f5;
 }
-
+**/
 .movieprofile {
   background-color: #c6e0f5;
   border-radius: 40px 0px;
@@ -119,7 +123,7 @@ section {
   background: black;
 }
 
-*/
+
 
 .wav {
   opacity: .9;
@@ -159,7 +163,7 @@ section {
 .card {
   height: 300px;
 }
-
+*/
 //https://codepen.io/pen/?&editable=true
 //https://www.youtube.com/watch?v=dQw9v7bWbPE
 //https://www.youtube.com/watch?v=l5PkvXb3LeU

@@ -27,6 +27,11 @@ class PageController extends Controller {
         return view('pages/projects/havenstones');
     }
 
+    public function project_my_own_docs()
+    {
+        return view('pages/projects/mermaid');
+    }
+
     public function contact()
     {
         return view('pages/contact');

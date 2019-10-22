@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.havenstone')
 
-@section('content')
+@section('havenstone')
     <div class="row">
         <div class="col-md-12">
             <div class="col-6">

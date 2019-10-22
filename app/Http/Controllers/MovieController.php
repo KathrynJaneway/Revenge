@@ -47,7 +47,7 @@ class MovieController extends Controller {
     public function requestToOMDb($movie_title)
     {
 
-//        $this->cullData();
+ //       $this->cullData();
 
 
         //Initial curl
@@ -185,7 +185,7 @@ class MovieController extends Controller {
     }
 
     private function cullData() {
-        for ($i=2251; $i<=3000; $i++){
+        for ($i=4706; $i<=4990; $i++){
 
             if ($i >= 1000 && $i < 10000) {
                 $imdbID = 'tt000' .$i;
